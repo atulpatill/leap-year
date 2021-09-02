@@ -8,6 +8,8 @@ function eventHandler(){
 
     console.log(date)
 
+    console.log("checking the date you entered")
+
 
     console.log("date is not in leap year")
 
