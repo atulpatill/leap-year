@@ -1,28 +1,23 @@
-const textInput = document.querySelector("#text-input")
+const dateInput = document.querySelector("#input1")
 const clickBtn = document.querySelector("#btn");
+const luckyNo = document.querySelector("#lucky")
 const outputDiv = document.querySelector("#output")
 
 
-
-
-// var userName = prompt("Give me your user Name")
-// alert( "This script works " + userName)
-
-function errorHandler(error){
-    console.log("error coccured", error)
-    alert("Try after some time")
-}
-
-function eventHandler(){
+clickBtn.addEventListener("click", ()=> {
     
-    outputDiv.innerText = "afdgyurjhbrf " + textInput.value 
-
+    number = Number(luckyNo.value)
+    if(number && dateInput.value ){
+    if(number === 7 | number === 9 | number === 3){
+        // console.log("yes")
+        outputDiv.innerText = "Yes your birthday is lucky!!"
+    }else{
+        outputDiv.innerText = "Ohh sorry your birthday is not lucky"
+    }
+}else{
+  outputDiv.innerText =   "plz enter all the inputs"
 }
+})
 
 
-.catch(errorHandler)
-
-
-
-clickBtn.addEventListener("click", eventHandler)
 

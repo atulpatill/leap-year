@@ -8,8 +8,10 @@
 </head>
 <body>
     <h1>Leap year app</h1>
-    <label for="">date</label>
+    <label for="input1">Date of birth</label>
     <input type="date" id="input1">
+    <label for="lucky">Lucky Number</label>
+    <input type="number" id="lucky" min="0" oninput="validity.valid||(value='');" >
     <button id="btn">Click</button>
     <div id="output"></div>
 
