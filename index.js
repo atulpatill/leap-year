@@ -10,7 +10,7 @@ clickBtn.addEventListener("click", ()=> {
     if(number && dateInput.value ){
     if(number === 7 | number === 9 | number === 3){
         // console.log("yes")
-        outputDiv.innerText = "Yes your birthday is lucky!!"
+        outputDiv.innerText = "Hurray! your birthday is lucky!!"
     }else{
         outputDiv.innerText = "Ohh sorry your birthday is not lucky"
     }
